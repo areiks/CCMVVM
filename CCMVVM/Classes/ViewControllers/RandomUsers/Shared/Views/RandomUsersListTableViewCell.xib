@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="100" id="KGk-i7-Jjw" customClass="RandomUsersListTableViewCell" customModule="CCMVVM" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="99.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="RandomUsersListCell" image="BookmarkRibbonWhite" translatesAutoresizingMaskIntoConstraints="NO" id="LFy-uQ-4GN">
+                        <rect key="frame" x="20" y="30" width="40" height="39.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="1Ga-eA-ldD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdp-kA-wXR">
+                        <rect key="frame" x="80" y="8" width="245" height="16"/>
+                        <fontDescription key="fontDescription" type="italicSystem" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FirstName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N74-XQ-OER">
+                        <rect key="frame" x="80" y="28" width="235" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8x-me-XP6">
+                        <rect key="frame" x="80" y="50" width="235" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cx2-XQ-NDn">
+                        <rect key="frame" x="80" y="72" width="235" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="cx2-XQ-NDn" secondAttribute="bottom" constant="8" id="0oT-52-wGa"/>
+                    <constraint firstAttribute="trailing" secondItem="N74-XQ-OER" secondAttribute="trailing" constant="20" id="5cb-Uy-iwh"/>
+                    <constraint firstAttribute="trailing" secondItem="x8x-me-XP6" secondAttribute="trailing" constant="20" id="AOM-LE-PNG"/>
+                    <constraint firstItem="LFy-uQ-4GN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="Gjz-FN-hzE"/>
+                    <constraint firstAttribute="trailing" secondItem="cx2-XQ-NDn" secondAttribute="trailing" constant="20" id="Mqg-VX-2H2"/>
+                    <constraint firstItem="Hdp-kA-wXR" firstAttribute="leading" secondItem="LFy-uQ-4GN" secondAttribute="trailing" constant="20" id="Ntz-oH-FXc"/>
+                    <constraint firstItem="cx2-XQ-NDn" firstAttribute="top" secondItem="x8x-me-XP6" secondAttribute="bottom" constant="4" id="Yyc-vu-El8"/>
+                    <constraint firstItem="x8x-me-XP6" firstAttribute="top" secondItem="N74-XQ-OER" secondAttribute="bottom" constant="4" id="Zh4-CZ-g8T"/>
+                    <constraint firstItem="N74-XQ-OER" firstAttribute="top" secondItem="Hdp-kA-wXR" secondAttribute="bottom" constant="4" id="aQF-j1-dRe"/>
+                    <constraint firstItem="N74-XQ-OER" firstAttribute="leading" secondItem="LFy-uQ-4GN" secondAttribute="trailing" constant="20" id="iIf-Qd-pI6"/>
+                    <constraint firstAttribute="bottom" secondItem="LFy-uQ-4GN" secondAttribute="bottom" constant="30" id="lfX-PO-4Gx"/>
+                    <constraint firstItem="cx2-XQ-NDn" firstAttribute="leading" secondItem="LFy-uQ-4GN" secondAttribute="trailing" constant="20" id="sKE-Ox-Tjb"/>
+                    <constraint firstItem="LFy-uQ-4GN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="tFz-t7-5DF"/>
+                    <constraint firstItem="Hdp-kA-wXR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="w1L-hI-onx"/>
+                    <constraint firstItem="x8x-me-XP6" firstAttribute="leading" secondItem="LFy-uQ-4GN" secondAttribute="trailing" constant="20" id="wVY-O8-lhf"/>
+                    <constraint firstAttribute="trailing" secondItem="Hdp-kA-wXR" secondAttribute="trailing" constant="10" id="yQe-0f-NV8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="emailLabel" destination="cx2-XQ-NDn" id="d6x-4A-bwY"/>
+                <outlet property="favouritedImageView" destination="LFy-uQ-4GN" id="ene-yn-Mqu"/>
+                <outlet property="firstNameLabel" destination="N74-XQ-OER" id="Brk-GB-3ol"/>
+                <outlet property="lastNameLabel" destination="x8x-me-XP6" id="gwb-Kq-zab"/>
+                <outlet property="titleLabel" destination="Hdp-kA-wXR" id="fgv-Um-7Kf"/>
+            </connections>
+            <point key="canvasLocation" x="50.5" y="88"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BookmarkRibbonWhite" width="50" height="50"/>
+    </resources>
+</document>

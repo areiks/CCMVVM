@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home Menu View Controller-->
+        <scene sceneID="B4G-vZ-3N6">
+            <objects>
+                <viewController storyboardIdentifier="HomeMenuViewController" id="VgU-8a-s4k" customClass="HomeMenuViewController" customModule="CCMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4cF-zN-elP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to CCMVVM!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="32g-SI-T3M">
+                                <rect key="frame" x="86.5" y="70" width="203.5" height="24"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yJi-3j-uUJ">
+                                <rect key="frame" x="100.5" y="194" width="173" height="30"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="View list of random users"/>
+                                <connections>
+                                    <action selector="randomUsersListClicked:" destination="VgU-8a-s4k" eventType="touchUpInside" id="fs8-rM-nxd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVr-Vw-gkP">
+                                <rect key="frame" x="113" y="272" width="148" height="30"/>
+                                <state key="normal" title="View favourited users"/>
+                                <connections>
+                                    <action selector="favouritedUsersClicked:" destination="VgU-8a-s4k" eventType="touchUpInside" id="QVe-Gn-4ML"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eVr-Vw-gkP" firstAttribute="centerX" secondItem="BYm-wH-NmQ" secondAttribute="centerX" id="58R-cm-Bby"/>
+                            <constraint firstItem="32g-SI-T3M" firstAttribute="centerX" secondItem="BYm-wH-NmQ" secondAttribute="centerX" id="EvK-B6-MCC"/>
+                            <constraint firstItem="eVr-Vw-gkP" firstAttribute="top" secondItem="yJi-3j-uUJ" secondAttribute="bottom" constant="48" id="Z72-fH-f3m"/>
+                            <constraint firstItem="32g-SI-T3M" firstAttribute="top" secondItem="BYm-wH-NmQ" secondAttribute="top" constant="50" id="ZZZ-YI-iuW"/>
+                            <constraint firstItem="yJi-3j-uUJ" firstAttribute="centerX" secondItem="BYm-wH-NmQ" secondAttribute="centerX" id="u9c-DS-mSW"/>
+                            <constraint firstItem="yJi-3j-uUJ" firstAttribute="top" secondItem="32g-SI-T3M" secondAttribute="bottom" constant="100" id="wLP-yk-M2k"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="BYm-wH-NmQ"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x77-9A-VIj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="134"/>
+        </scene>
+    </scenes>
+</document>

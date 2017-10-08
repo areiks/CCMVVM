@@ -12,10 +12,16 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var mainFlowCoordinator: MainFlowCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow(frame : UIScreen.main.bounds)
+        let configure = FlowConfigure(window: window, navigationController: nil, parent: nil)
+        mainFlowCoordinator = MainFlowCoordinator(configure: configure)
+        mainFlowCoordinator.start()
+        
         return true
     }
 

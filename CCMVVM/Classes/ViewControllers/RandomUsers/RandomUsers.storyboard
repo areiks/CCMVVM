@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Random Users List View Controller-->
+        <scene sceneID="kgp-lM-arR">
+            <objects>
+                <viewController storyboardIdentifier="RandomUsersListViewController" automaticallyAdjustsScrollViewInsets="NO" id="4Ks-Tk-OGW" customClass="RandomUsersListViewController" customModule="CCMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Nlw-dD-ztn">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Hdn-vl-FZR">
+                                <rect key="frame" x="0.0" y="76" width="375" height="591"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="rjK-S1-9Pa">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hdn-vl-FZR" firstAttribute="top" secondItem="rjK-S1-9Pa" secondAttribute="bottom" id="2vp-my-deQ"/>
+                            <constraint firstItem="G4x-9F-CRO" firstAttribute="trailing" secondItem="Hdn-vl-FZR" secondAttribute="trailing" id="5A1-Hw-Jbq"/>
+                            <constraint firstItem="rjK-S1-9Pa" firstAttribute="leading" secondItem="G4x-9F-CRO" secondAttribute="leading" id="6QR-g3-zHn"/>
+                            <constraint firstItem="Hdn-vl-FZR" firstAttribute="leading" secondItem="G4x-9F-CRO" secondAttribute="leading" id="M0T-po-5Ot"/>
+                            <constraint firstItem="G4x-9F-CRO" firstAttribute="bottom" secondItem="Hdn-vl-FZR" secondAttribute="bottom" id="Msk-NP-GJM"/>
+                            <constraint firstItem="rjK-S1-9Pa" firstAttribute="top" secondItem="G4x-9F-CRO" secondAttribute="top" id="bf4-Cb-wE2"/>
+                            <constraint firstItem="G4x-9F-CRO" firstAttribute="trailing" secondItem="rjK-S1-9Pa" secondAttribute="trailing" id="d7R-3n-EJ3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="G4x-9F-CRO"/>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="rjK-S1-9Pa" id="UHP-jt-a7b"/>
+                        <outlet property="tableView" destination="Hdn-vl-FZR" id="F1R-LV-TUB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pNc-zb-eQf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="152.80000000000001" y="127.28635682158921"/>
+        </scene>
+    </scenes>
+</document>
